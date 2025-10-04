@@ -1,0 +1,26 @@
+:root {
+    --white: hsl(100, 100%, 100%);
+    --soft: hsl(329, 43%, 88%);
+    --pink: hsl(350, 100%, 88%);
+    --mocha: hsl(7, 61%, 82%);
+    --lilac: hsl(257, 32%, 74%);
+    --purple: hsl(270, 48%, 60%);
+    --grey: hsl(224, 6%, 63%);
+    --blue: hsl(195, 100%, 50%);
+    --dark: hsl(233, 23%, 30%);
+    --black: hsl(0, 0%, 0%);
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--lilac);
+    font-family: system-ui;
+}
+
+
+
