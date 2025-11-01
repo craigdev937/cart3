@@ -30,7 +30,9 @@ export interface ICart extends IData {
 };
 
 export interface ICartState {
-    cart: ICart[]
+    cart: ICart[],
+    totalQuantity: number,
+    toalAmount: number
 };
 
 

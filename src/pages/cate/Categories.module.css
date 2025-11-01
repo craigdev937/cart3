@@ -1,6 +1,123 @@
+.cat__container {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.cat__container section {
+    display: flex;
+    gap: 5rem;
+}
+
 .title {
     font-weight: bold;
     color: var(--blue);
 }
+
+.bounce__element {
+    width: 5rem;
+    height: 5rem;
+    place-items: center;
+    background-color: dodgerblue;
+    position: relative;  /* Top property in animation */
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        top: 0;
+        /* Starting and ending position (at the top) */
+        animation-timing-function: ease-in;
+        /* Slow start, fast end for falling */
+    }
+
+    50% {
+        top: 100px;
+        /* Lowest point of the bounce */
+        animation-timing-function: ease-out;
+        /* Fast start, slow end for rising */
+    }
+}
+
+.rotate__element {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    background-color: hotpink;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        /* Start at 0 degrees reotation. */
+        transform: rotate(0deg);
+    }
+    100% {
+        /* Start at 0 degrees reotation. */
+        transform: rotate(360deg);
+    }
+}
+
+.pulse__element {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    animation-name: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rbga(0, 123, 255, 0.7);
+    }
+    70% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+    }
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+    }
+}
+
+.slideIn__element {
+    width: 5rem;
+    height: 5rem;
+    background-color: orange;
+    animation-name: slideInFromLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.fadeIn__element {
+    width: 5rem;
+    height: 5rem;
+    background-color: green;
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 
 

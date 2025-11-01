@@ -4,6 +4,7 @@
   "main": "index.tsx",
   "type": "commonjs",
   "scripts": {
+    "jest": "jest --env=jsdom",
     "test": "rstest",
     "test:watch": "rstest -w",
     "dev": "rsbuild dev",
@@ -26,12 +27,12 @@
     "@rsbuild/core": "^1.5.13",
     "@rsbuild/plugin-react": "^1.4.1",
     "@rstest/core": "^0.5.1",
+    "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.6.2",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "typescript": "^5.9.3"
   }
 }
-
-

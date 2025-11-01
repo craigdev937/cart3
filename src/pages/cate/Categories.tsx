@@ -4,11 +4,15 @@ import styles from "./Categories.module.css";
 export const Categories = () => {
     return (
         <React.Fragment>
-            <main>
+            <main className={styles.cat__container}>
                 <h1 className={styles.title}>Categories</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet tempora ullam impedit repellat obcaecati, unde voluptatum delectus doloribus necessitatibus at deserunt quas nobis iste ex eligendi explicabo deleniti quos perspiciatis corrupti hic accusamus maiores ratione enim et. Officia, a necessitatibus.
-                </p>
+                <section>
+                    <div className={styles.bounce__element}></div>
+                    <div className={styles.rotate__element}></div>
+                    <div className={styles.pulse__element}></div>
+                    <div className={styles.slideIn__element}></div>
+                    <div className={styles.fadeIn__element}></div>
+                </section>
             </main>
         </React.Fragment>
     );
